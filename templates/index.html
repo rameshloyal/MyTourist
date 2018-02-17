@@ -55,7 +55,7 @@
 	    <div style="float:left;" name="main2 division1">
 	      <h1 style="padding-left:20px;" >Recent logins</h1>
 		  <h3 style="padding-left:20px;">Click your picture or add an account.</h3>
-		  <img style="padding-left:20px;" src="../images/profile.jpg"/>
+		  <img id="img1" style="padding-left:20px;" src="../images/profile.jpg"/>
 		  <img style="padding-left:20px;" src="../images/send.jpg"/>
 	    </div>
 	    <div style="float:right;" name="main2 division2">
@@ -106,10 +106,19 @@
 
 
 <!-- relative path loading -->
+<script src="../js/jquery-3.3.1.js" type="text/javascript"></script>
 <script src="../js/validation.js" type="text/javascript"></script>
 
 
-
+ <script type = "text/javascript">
+         $(document).ready(function() {
+         	//logic to find adblockers 
+         	//if true
+             $("img").click(function(){
+  alert("You clicked on image");
+ });
+         });
+</script>
 
 
 
